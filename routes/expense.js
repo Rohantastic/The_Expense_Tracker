@@ -4,6 +4,7 @@ const router = express.Router();
 
 
 router.get('/',expenseController.getForm);
+router.post('/form',expenseController.postData);
 
 
 

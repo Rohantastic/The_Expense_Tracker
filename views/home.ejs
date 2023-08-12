@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <h1>Expense Tracker</h1>
     <hr>
    <div class="body">
-    <form action="./form" method="post" id="form">
+    <form action="/form" method="post" id="form">
         <div class="expenseAmount">
             <label for="amount"> Add Amount:
-                <input type="number">
+                <input type="number" id="amount" name="amount">
             </label>
         </div>
         <div class="expenseDescription">
             <label for="description"> Add description:
-                <input type="textarea">
+                <input type="textarea" id="description" name="description">
             </label>
         </div>
         <div class="expenseSelect">
             <label for="category"> Choose category:
-                <select> 
+                <select id="category" name="category"> 
                     <option>Fuel</option>
                     <option>Groceries</option>
                     <option>Medicine</option>
@@ -32,8 +32,8 @@
             </label>
         </div>
         <div class="expenseSubmit">
-            <label for="btn"> Enter :
-                <input type="submit" id="btn">
+            <label for="btn">
+                <input type="submit" id="btn" name="but">
             </label>
         </div>
     </form>
