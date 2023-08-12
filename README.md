@@ -15,5 +15,3 @@ A simple web application for tracking expenses built using Node.js, Express.js, 
 
 ## Prerequisites
 
-- Node.js 
-- npm 

@@ -1,6 +1,9 @@
 const express = require('express');
-const route = require('./routes/expense');
 const app = express();
+const route = require('./routes/expense');
+app.use(express.urlencoded());
+app.use(express.json());
+
 
 //views
 app.use(express.static('public'));
