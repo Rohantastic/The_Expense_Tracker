@@ -26,11 +26,27 @@ exports.postData = async (req,res,next) => {
             category
         });
     
-        res.json(object);
+        res.redirect('/');
         
     }catch(err){
         console.log(err);
         res.status(500).send('Internal server error');
     }
 
-}   
+};
+
+exports.getData = async (req,res,next) =>{
+   const data =  await Sequelize.findAll(); 
+   res.render('details',{
+        data : data,
+        path: '/'
+   });
+};
+
+exports.contact = (req,res,next) =>{
+    res.render('contact');
+};
+
+exports.errorPage = (req,res,next) =>{
+    res.status(404).render('404');
+}

@@ -1,0 +1,44 @@
+/* Reset default margin and padding */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center the categories on the screen */
+  .details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .category-container {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .category {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category h2 {
+    margin-bottom: 10px;
+  }
+  
+  .category ul {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  
+  li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
