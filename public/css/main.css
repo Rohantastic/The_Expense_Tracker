@@ -1,0 +1,50 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1{
+    padding-top: 30px;
+    size: 3px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
+  }
+
+  hr{
+    size: 4px;
+}
+
+  
+  /* Center the form container using flexbox */
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the container to full viewport height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style the form elements as needed */
+  form {
+    margin-top: -20%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust the styles of other form elements as needed */
+  .expenseAmount,
+  .expenseDescription,
+  .expenseSelect,
+  .expenseSubmit {
+    margin-bottom: 10px;
+  }
+  
+
+  #btn{
+    background-color: skyblue;
+    border-radius: 10px;
+  }
