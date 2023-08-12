@@ -37,9 +37,13 @@ A simple web application for tracking expenses built using Node.js, Express.js, 
 
 ![contact](https://github.com/Rohantastic/The_Expense_Tracker/assets/50244302/f5c3e41b-513e-4129-8a5c-3f7cca2338b2)
 
-
 - Error Page
 
 ![err](https://github.com/Rohantastic/The_Expense_Tracker/assets/50244302/ba85ffd9-4ae2-439b-b662-250bc847835d)
+
+
+-Database Table Format
+![dbtable](https://github.com/Rohantastic/The_Expense_Tracker/assets/50244302/9abe5810-0cc4-4703-b14e-71b0eb5cf86c)
+
 
 
