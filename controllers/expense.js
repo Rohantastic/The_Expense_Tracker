@@ -1,7 +1,12 @@
 const Sequelize = require('../models/expense');
 
+
+exports.mainPage = (req,res,next)=>{
+    res.render('mainPage');
+}
+
 exports.getForm = (req,res,next)=>{
-    res.render('home');
+    res.render('add');
 }
 
 exports.postData = async (req,res,next) => {
@@ -22,6 +27,7 @@ exports.postData = async (req,res,next) => {
         });
     
         res.json(object);
+        
     }catch(err){
         console.log(err);
         res.status(500).send('Internal server error');

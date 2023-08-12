@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <h1>Expense Tracker</h1>
-    <hr>
+<%- include('partials/header') %>
    <div class="body">
     <form action="/form" method="post" id="form">
         <div class="expenseAmount">
@@ -38,5 +28,6 @@
         </div>
     </form>
    </div>
-</body>
-</html>
+
+
+<%- include('partials/footer') %>
