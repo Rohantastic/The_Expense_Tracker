@@ -1,8 +1,10 @@
+const Sequelize = require('../models/expense');
+
 exports.getForm = (req,res,next)=>{
     res.render('home');
 }
 
-exports.postData = (req,res,next) => {
+exports.postData = async (req,res,next) => {
     const amount = req.body.amount;
     const description = req.body.description;
     const category = req.body.category;
@@ -11,6 +13,18 @@ exports.postData = (req,res,next) => {
         description: description,
         category: category,
     }
-    res.json(object);
+
+    try{
+        const expenseResult =  await Sequelize.create({
+            amount,
+            description,
+            category
+        });
+    
+        res.json(object);
+    }catch(err){
+        console.log(err);
+        res.status(500).send('Internal server error');
+    }
 
 }   
