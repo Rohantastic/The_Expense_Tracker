@@ -2,7 +2,7 @@
 
 A simple web application for tracking expenses built using Node.js, Express.js, and Sequelize.
 
-![Expense Tracker App Screenshot](screenshot.png)
+
 
 ## Features
 
